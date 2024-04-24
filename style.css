@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #2980b9;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+}
+
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#game-container {
+    text-align: center;
+}
+
+h1 {
+    color: #f39c12;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#start-button {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover {
+    background-color: #e67e22;
+}
+
+#score {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#sequence-display {
+    font-size: 2em;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #34495e;
+    border: 2px solid #2c3e50;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#message {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#color-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.color-button {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.color-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.flash {
+    animation: flash 0.3s;
+}
+
+@keyframes flash {
+    0% {
+        background-color: #fff;
+    }
+    50% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #fff;
+    }
+}
+
+.red {
+    background-color: #e74c3c;
+}
+
+.yellow {
+    background-color: #f1c40f;
+}
+
+.blue {
+    background-color: #3498db;
+}
+
+.green {
+    background-color: #2ecc71;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c3e50;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2980b9;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #f39c12;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .game-link {
+            display: inline-block;
+            margin: 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .game-link img {
+            width: 200px; 
+            border-radius: 10px; /* runda hörn*/
+            transition: transform 0.3s ease; /* En snygg hover effect */
+        }
+
+        .game-link img:hover {
+            transform: scale(1.1); /* Går upp i skala när man hover */
+        }
+
+        .game-description {
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Välkommen till spel centret Möllmark</h1>
+    </header>
+    <nav>
+        <a href="index.html">Hem</a>
+        <a href="/game/public/CMG/color_memory_game.html">Färgminne Spelet</a>
+        <a href="/game/public/RPS/rock_paper_scissors.html">Sten Sax Påse</a>
+        <a href="/game/public/GTN/guess_the_number_game.html">Gissa Numret</a>
+    </nav>
+    <main>
+        <div class="game-link">
+            <a href="/game/public/CMG/color_memory_game.html">
+                <img src="/game/public/images/color.png" alt="Color Memory Game">
+            </a>
+            <p class="game-description">Testa ditt minne med Färgminne Spelet</p>
+        </div>
+
+        <div class="game-link">
+            <a href="/game/public/RPS/rock_paper_scissors.html">
+                <img src="/game/public/images/rock.png" alt="Rock Paper Scissors">
+            </a>
+            <p class="game-description">Kör Sten Sax Påse mot datorn!</p>
+        </div>
+
+        <div class="game-link">
+            <a href="/game/public/GTN/guess_the_number_game.html">
+                <img src="/game/public/images/number.png" alt="Guess the Number">
+            </a>
+            <p class="game-description">Försök att gissa numret i Gissa Numret Spelet</p>
+        </div>
+    </main>
+</body>
+</html>
